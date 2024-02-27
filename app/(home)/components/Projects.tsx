@@ -12,28 +12,28 @@ export default function Projects() {
             title:"E-shop",
             tech:[SiReact, SiNodedotjs, SiExpress,SiMongodb, SiRedux],
             link:"https://main--eshopwebsiteforshop.netlify.app/",
-            cover:"/project-2.png",
+            cover:"/project-4.png",
             background:"bg-indigo-500"
         },
         {
             title:"Link-up",
             tech:[SiReact, SiNodedotjs, SiExpress,SiMongodb, SiRedux],
             link:"https://64e2354c59ca5776a15fc558--relaxed-llama-11d686.netlify.app/",
-            cover:"/project-2.png",
+            cover:"/project-5.png",
             background:"bg-green-500"
         },
         {
             title:"Chatroom",
             tech:[SiReact, SiNodedotjs, SiExpress,SiMongodb, SiRedux, SiSocketdotio],
             link:"https://chatroom-0glw.onrender.com/",
-            cover:"/project-1.png",
+            cover:"/project-3.png",
             background:"bg-indigo-500"
         },
         {
             title:"SimplyNote",
             tech:[SiReact, SiNodedotjs, SiExpress,SiMongodb, SiRedux],
             link:"https://simplynote.onrender.com/",
-            cover:"/project-3.png",
+            cover:"/project-6.png",
             background:"bg-green-500"
         },
     ]
