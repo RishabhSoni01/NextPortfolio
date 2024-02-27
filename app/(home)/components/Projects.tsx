@@ -35,8 +35,8 @@ export default function Projects() {
             link:"https://simplynote.onrender.com/",
             cover:"/project-6.png",
             background:"bg-green-500"
-        },
-    ]
+        }
+    ];
   return (
     <div className='py-10 p-5 sm:p-0'>
         <Title text="Projects 🎯" className='flex flex-col items-center'/>
