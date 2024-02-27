@@ -43,25 +43,23 @@ export default function Projects() {
 
         <div className='grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5'>
             {projects.map((project,index)=>{
-                return (
-                    <div key={index}> {/* Key prop assigned to the top-level div */}
-                        <Link href={project.link}>
-                            <div className={cn("p-5 rounded-md",project.background)}>
-                                <DirectionAwareHover imageUrl={project.cover} className='w-full space-y-5 cursor-pointer'>
-                                <div className='space-y-5'>
-                                    <h1 className='text-2xl font-bold'>{project.title}</h1>
-                                    <div className='flex item-center gap-5 '>
-                                        {project.tech.map((Icon,techIndex)=>{
-                                            return <Icon className="w-8 h-8" key={techIndex} /> {/* Key prop assigned to the Icon */}
-                                        })}
-                                    </div>
+                return (<div key={index}>
+                    <Link href={project.link}>
+                        <div className={cn("p-5 rounded-md",project.background)}>
+                            <DirectionAwareHover imageUrl={project.cover} className='w-full space-y-5 cursor-pointer'>
+                            <div className='space-y-5'>
+                                <h1 className='text-2xl font-bold'>{project.title}</h1>
+                                <div className='flex item-center gap-5 '>
+                                    {project.tech.map((Icon,index)=>{
+                                        return <Icon className="w-8 h-8" key={index} />
+                                    })}
                                 </div>
-                                </DirectionAwareHover>
                             </div>
-                        </Link>
-                    </div>
-                );
-            })}
+                            </DirectionAwareHover>
+                        </div>
+                    </Link>
+                </div>
+            )})}
         </div>
     </div>
     
